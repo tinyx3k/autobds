@@ -82,5 +82,19 @@ if __name__ == "__main__":
         'regex': 'r"\D(\d{6})\D", s'
     }
 
+    # ==> Đang lỗi
+    # bannha_net = {
+    #     'api': 'https://bannha.net/wp-admin/admin-ajax.php',
+    #     'payload': {
+    #         'name': userData['fullname'],
+    #         'email': userData['email'],
+    #         'phone': rand.randomPhone(),
+    #         'password': userData['password'],
+    #         'confirm_password': userData['password'],
+    #         'action': 'willgroup_register'
+    #     },
+    #     'regex':
+    # }
+
     sv = Service(alinhadat['api'], alinhadat['regex'], alinhadat['payload'])
     sv.register()
